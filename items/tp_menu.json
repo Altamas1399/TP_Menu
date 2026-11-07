@@ -1,0 +1,25 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tpi:tp_menu",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:icon": "ender_eye",
+      "minecraft:display_name": {
+        "value": "TP Menu"
+      },
+      "minecraft:hover_text_color": "aqua",
+      "minecraft:glint": true,
+      "minecraft:max_stack_size": 1,
+      "minecraft:can_destroy_in_creative": false,
+      "minecraft:cooldown": {
+        "category": "tpi:menu",
+        "duration": 0.5
+      }
+    }
+  }
+}

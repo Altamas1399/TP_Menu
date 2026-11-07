@@ -1,0 +1,50 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "TP Items (Extended)",
+    "description": "This add-on expands the standard teleport request system with additional features:\n\n• Location History (stores up to 100 recent locations)\n• Personal Waypoints (create, rename, and delete your own waypoints)\n• Timed Deathpoint Teleport (teleport to your deathpoint within 3 minutes)\n• Auto-Give TP Menu (players automatically receive the TP menu if they don't have one)\n\nAdmins can configure all features by having the “admin” tag. Based on the original 'TP Items' by DeathSinger4221.\nEnjoy your enhanced teleport experience!",
+    "version": [
+      1,
+      0,
+      2
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      90
+    ],
+    "uuid": "f00cd8db-bee9-48f6-b130-4e461a2b73bd"
+  },
+  "modules": [
+    {
+      "type": "data",
+      "version": [
+        1,
+        0,
+        2
+      ],
+      "uuid": "0a7fbceb-43c9-4937-a597-acc5b672623e"
+    },
+    {
+      "type": "script",
+      "version": [
+        1,
+        0,
+        2
+      ],
+      "language": "javascript",
+      "entry": "scripts/index.js",
+      "uuid": "b50bbf1e-fb8e-4276-bbd9-01b4e5a55857"
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.0.0"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "2.0.0"
+    }
+  ]
+}
