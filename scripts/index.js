@@ -1144,21 +1144,3 @@ function saveWaypointsOfPlayer(name, arr) {
   gwp[name] = arr;
   saveGlobalWaypoints(gwp);
 }
-
-function openTpItemWelcomeMenu(player) {
-  const ui = new MessageFormData()
-    .title("§lYou've been gifted a TP Menu item!")
-    .body(
-      "§lWith this TP Menu, you can:\n" +
-      "§a- Send teleport requests to other players\n" +
-      "§a- Save and manage personal waypoints\n" +
-      "§a- View your location history\n" +
-      "§a- Teleport to markers (respawn point, deathpoint, etc.)\n\n" +
-      "§eNote: Features may vary based on admin settings.\n\n" +
-      "§lAdd-On Info:\n" +
-      "§bTP Menu v1.0.0\n" +
-      "Created by: §bAltamas#1682"
-    );
-  ui.button1("Close");
-  ui.show(player).catch(e => console.warn("[TP Menu] Welcome menu failed: " + e));
-}
